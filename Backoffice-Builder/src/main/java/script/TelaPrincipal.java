@@ -1,3 +1,5 @@
+package script;
+
 
 
 import javafx.application.Application;
@@ -24,7 +26,7 @@ public class TelaPrincipal extends Application {
 	private void initRootLayout() {
 		try {
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(TelaPrincipal.class.getResource("script/view/RootLayout.fxml"));
+			loader.setLocation(TelaPrincipal.class.getResource("view/RootLayout.fxml"));
 			rootLayout = (BorderPane) loader.load();
 			
 			Scene scene = new Scene(rootLayout);
@@ -39,10 +41,11 @@ public class TelaPrincipal extends Application {
 	public void showVisualizadorScript(){
 		try {
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(TelaPrincipal.class.getResource("script/view/VisualizadorScript.fxml"));
+			loader.setLocation(TelaPrincipal.class.getResource("view/VisualizadorScript.fxml"));
 			AnchorPane visualizadorScript = (AnchorPane) loader.load();
 			
 			rootLayout.setCenter(visualizadorScript);
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
