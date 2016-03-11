@@ -12,7 +12,7 @@
               <items>
                 <AnchorPane id="painelControle" fx:id="painelControle" minHeight="0.0" minWidth="0.0" prefHeight="38.0" prefWidth="798.0" SplitPane.resizableWithParent="false">
                      <children>
-                        <Button id="botaoNovoMetodo" fx:id="botaoNovoMetodo" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleinsertText" text="Novo Metodo" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
+                        <Button id="botaoNovoMetodo" fx:id="botaoNovoMetodo" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleNovoMetodo" text="Novo Metodo" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
                      </children>
                   </AnchorPane>
                 <AnchorPane id="painelVisualizacao" fx:id="painelVisualizacao" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">

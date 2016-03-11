@@ -3,24 +3,29 @@ package script.view;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import script.ScriptTratamento;
 
 public class VisualizadorScriptController {
+	ScriptTratamento scriptTratamento;
 
-	
 	@FXML
-	private	Button botaoNovoMetodo;
-	
+	private Button botaoNovoMetodo;
+
 	@FXML
-	private	TextArea visualizacaoScript;
-	
+	private TextArea visualizacaoScript;
+
 	@FXML
-	private void handleinsertText(){
+	private void handleNovoMetodo() {
 		visualizacaoScript.setText("teste visualização");
 	}
-	
+
 	@FXML
-	private void initialize(){
-		
+	private void initialize() {
+		criaScript();
+	}
+	
+	private void criaScript(){
+		scriptTratamento = new ScriptTratamento();
 	}
 
 }
