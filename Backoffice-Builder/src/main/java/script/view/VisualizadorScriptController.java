@@ -16,16 +16,20 @@ public class VisualizadorScriptController {
 
 	@FXML
 	private void handleNovoMetodo() {
-		visualizacaoScript.setText("teste visualização");
+		
 	}
 
 	@FXML
 	private void initialize() {
 		criaScript();
-	}
-	
-	private void criaScript(){
-		scriptTratamento = new ScriptTratamento();
+		atualizarVisualizacao();
 	}
 
+	private void criaScript() {
+		scriptTratamento = new ScriptTratamento("src/main/resources/Template.tpt");
+	}
+
+	private void atualizarVisualizacao() {
+		visualizacaoScript.setText(scriptTratamento.getScript().toString());		
+	}
 }

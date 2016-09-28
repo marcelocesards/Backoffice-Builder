@@ -5,8 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane id="novoMetodo" fx:id="novoMetodo" prefHeight="381.0" prefWidth="817.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<AnchorPane id="novoMetodo" fx:id="novoMetodo" prefHeight="381.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="script.view.NovoMetodoController">
    <children>
       <TabPane id="tabNovoMetodo" fx:id="tabNovoMetodo" layoutX="43.0" layoutY="37.0" prefHeight="300.0" prefWidth="400.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <tabs>
@@ -14,7 +13,8 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextArea fx:id="textInsertMetodo" layoutX="14.0" layoutY="151.0" prefHeight="352.0" prefWidth="817.0" promptText="Digite ou cole uma procedure ou function." AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <TextArea id="textInsertMetodo" fx:id="textInsertMetodo" layoutX="14.0" layoutY="14.0" prefHeight="199.0" prefWidth="790.0" promptText="Digite ou cole uma procedure ou function." AnchorPane.bottomAnchor="148.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+                        <Button id="buttonAdicionar" fx:id="buttonAdicionar" layoutX="751.0" layoutY="313.0" mnemonicParsing="false" onAction="#handleAdicionarMetodo" text="Adicionar" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" />
                      </children>
                   </AnchorPane>
             </content>
